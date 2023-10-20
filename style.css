@@ -55,8 +55,8 @@ button:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 
-#workspaces button.focused {
-    color: #5E81AC;
+#workspaces button.active {
+    color: #A3BE8C;
 }
 
 #workspaces button.urgent {
