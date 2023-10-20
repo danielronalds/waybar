@@ -3,9 +3,15 @@
     "spacing": 4, // Gaps between modules (4px)
 
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["custom/distro-logo","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["pulseaudio", "backlight", "network",  "battery", "clock", "tray"],
+
+    "custom/distro-logo": {
+        "exec": "echo ''",
+        "format": "{}",
+        "interval": "once",
+    },
 
      "hyprland/workspaces": {
          "disable-scroll": true,

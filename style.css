@@ -110,6 +110,11 @@ button:hover {
     background-color: #A3BE8C;
 }
 
+#custom-distro-logo {
+    font-size: 2.3em;
+    margin-left: 10px;
+}
+
 @keyframes blink {
     to {
         background-color: #ffffff;
