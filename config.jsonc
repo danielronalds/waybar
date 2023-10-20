@@ -14,7 +14,7 @@
          "format": "{icon}",
          "format-icons": {
              "urgent": "",
-             "focused": "",
+             "active": "",
              "default": ""
          }
      },
