@@ -8,7 +8,7 @@
     "modules-right": ["pulseaudio", "backlight", "network",  "battery", "clock", "tray"],
 
     "custom/distro-logo": {
-        "exec": "echo ''",
+        "exec": "echo '󱄅'",
         "format": "{}",
         "interval": "once",
     },
