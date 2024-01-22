@@ -1,3 +1,5 @@
+@import "frappe.css";
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Jetbrains Mono, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -5,8 +7,8 @@
 }
 
 window#waybar {
-    background-color: #3B4252;
-    color: #ECEFF4;
+    background-color: @crust;
+    color: @text;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0px;
@@ -59,7 +61,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: @red;
 }
 
 #mode {
@@ -88,9 +90,9 @@ button:hover {
     padding: 7px;
     padding-left: 12px;
     padding-right: 12px;
-    border-radius: 6px;
-    background-color: #4C566A;
-    color: #ECEFF4;
+    border-radius: 3px;
+    background-color: @base;
+    color: @text;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -107,7 +109,7 @@ button:hover {
     margin: 5px;
     padding: 7px;
     border-radius: 6px;
-    background-color: #A3BE8C;
+    background-color: @green;
 }
 
 #custom-distro-logo {
@@ -151,12 +153,12 @@ label:focus {
 }
 
 #network.disconnected {
-    background-color: #BF616A;
+    background-color: @red;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: @red;
+    color: @base;
 }
 
 #wireplumber {
