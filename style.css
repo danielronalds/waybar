@@ -1,4 +1,4 @@
-@import "frappe.css";
+@import 'gruvbox.css';
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -7,8 +7,8 @@
 }
 
 window#waybar {
-    background-color: @crust;
-    color: @text;
+    background-color: @bg;
+    color: @fg;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0px;
@@ -28,11 +28,11 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+    background-color: @bg;
 }
 
 window#waybar.chromium {
-    background-color: #000000;
+    background-color: @fg;
     border: none;
 }
 
@@ -61,11 +61,11 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: @red-bright;
 }
 
 #mode {
-    background-color: #64727D;
+    background-color: @aqua;
     border-bottom: 3px solid #ffffff;
 }
 
@@ -91,8 +91,8 @@ button:hover {
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 3px;
-    background-color: @base;
-    color: @text;
+    background-color: @bg1;
+    color: @fg;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -126,8 +126,8 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #BF616A;
-    color: #ECEFF4;
+    background-color: @red;
+    color: @fg;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
