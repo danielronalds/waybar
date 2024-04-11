@@ -1,4 +1,4 @@
-@import 'gruvbox.css';
+@import 'catppuccin-frappe.css';
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -7,8 +7,8 @@
 }
 
 window#waybar {
-    background-color: @bg;
-    color: @fg;
+    background-color: @base;
+    color: @text;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0px;
@@ -91,8 +91,7 @@ button:hover {
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 3px;
-    background-color: @bg1;
-    color: @fg;
+    color: @text;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -108,8 +107,10 @@ button:hover {
 #battery.charging, #battery.plugged {
     margin: 5px;
     padding: 7px;
+    padding-right: 15px;
     border-radius: 6px;
     background-color: @green;
+    color: @crust;
 }
 
 #custom-distro-logo {
